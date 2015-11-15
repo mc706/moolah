@@ -21,5 +21,7 @@ angular.module('moolah', ['ngRoute', 'ngResource', 'cgBusy', 'chart.js'])
                 templateUrl: toStatic('app/views/graphs.html'),
                 controller: 'GraphsController',
                 controllerAs: 'graphsCtrl'
-            });
+            })
+
+            .otherwise({redirectTo: '/'});
     }]);
